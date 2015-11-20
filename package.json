@@ -1,0 +1,43 @@
+{
+  "name": "gitbook-plugin-editlink",
+  "description": "GitBook Plugin to add \"Edit this page\" link on every page. Link target will be that page's source file on Github or any repo.",
+  "main": "index.js",
+  "version": "1.0.0",
+  "author": "zhaoda",
+  "engines": {
+    "gitbook": ">=2.5.0"
+  },
+  "homepage": "https://github.com/zhaoda/gitbook-plugin-editlink",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhaoda/gitbook-plugin-editlink.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhaoda/gitbook-plugin-editlink/issues"
+  },
+  "keywords": [
+    "gitbook",
+    "plugin",
+    "editlink",
+    "github"
+  ],
+  "gitbook": {
+    "properties": {
+      "base": {
+        "type": "string",
+        "title": "Base for the edit redirection",
+        "required": true
+      },
+      "label": {
+        "type": [ "string", "object" ],
+        "title": "Label for the edit button",
+        "default": "Edit This Page"
+      },
+      "multilingual": {
+        "type": [ "boolean" ],
+        "title": "Using multiple languages",
+        "default": false      }
+    }
+  }
+}

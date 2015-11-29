@@ -2,7 +2,7 @@
   "name": "gitbook-plugin-editlink",
   "description": "GitBook Plugin to add \"Edit this page\" link on every page. Link target will be that page's source file on Github or any repo.",
   "main": "index.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "zhaoda",
   "engines": {
     "gitbook": ">=2.5.0"
@@ -37,8 +37,7 @@
       "multilingual": {
         "type": [ "boolean" ],
         "title": "Using multiple languages",
-        "default": false,
-        "enum": ["true", "false"]
+        "default": false
       }
     }
   }
